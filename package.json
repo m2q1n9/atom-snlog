@@ -1,0 +1,10 @@
+{
+  "name": "atom-snlog",
+  "version": "0.0.0",
+  "description": "a skynet log highlight for atom",
+  "repository": "https://github.com/m2q1n9/atom-snlog",
+  "license": "MIT",
+  "engines": {
+    "atom": "*"
+  }
+}
