@@ -11,9 +11,6 @@ patterns: [
 		include: "#address"
 	}
 	{
-		include: "#loglevel"
-	}
-	{
 		include: "#datetime"
 	}
 	{
@@ -29,13 +26,10 @@ patterns: [
 repository:
 	warning:
 		name: "invalid.illegal.snlog"
-		match: ".*\\b(WARN|ERROR|error|failed|traceback)\\b.*"
+		match: ".*\\b(W/|E/|WARN|ERROR|error|failed|traceback)\\b.*"
 	address:
 		name: "comment.block.snlog"
 		match: "\\[:[0-9a-f]{8}\\]"
-	loglevel:
-		name: "constant.character.snlog"
-		match: "\\b(DEBUG|INFO)\\b"
 	datetime:
 		name: "constant.numeric.snlog"
 		match: "\\b[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}\\b"
